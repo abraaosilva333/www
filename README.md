@@ -1,7 +1,8 @@
-Legenda:
-[✓] Concluído / com estudos
-[~] Em andamento
-[ ] Não iniciado / vazio
+**Legenda:**
+
+- `[✓]` Concluído / com estudos
+- `[~]` Em andamento
+- `[ ]` Não iniciado / vazio
 
 ```text
 www/
@@ -15,7 +16,9 @@ www/
 ├── [ ] nextjs/
 ├── [ ] nodejs/
 ├── [ ] frontend/
+│   └── [ ] storybook/
 ├── [ ] backend/
 ├── [ ] databases/
 ├── [ ] testing/
 └── [ ] git/
+```
