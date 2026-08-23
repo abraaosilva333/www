@@ -4,10 +4,16 @@ let umaString = "Um texto";
 let texto = "O gato viu outro gata";
 
 console.log(umaString[7]);
+// charAt() -> descobre qual caractere está em uma determinada posição (índice)
 console.log(umaString.charAt(7));
+
 console.log(umaString.concat("ou", " ", "uma", " ", "palavra"));
 console.log(umaString.concat(" ou uma palavra"));
 console.log(umaString.lastIndexOf("e", 3));
+
+// indexOf() -> descobre em qual posição (índice) um caractere está
+console.log(texto.indexOf("g"));
+
 console.log(texto.indexOf("g", 2));
 // retorna -1 caso não existe
 
