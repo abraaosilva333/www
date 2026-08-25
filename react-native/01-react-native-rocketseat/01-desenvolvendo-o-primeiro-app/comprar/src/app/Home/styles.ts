@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     // borderWidth: 2,
     // borderColor: "red",
     // borderStyle: "solid",
-    // paddingTop: 16,
+    paddingTop: 16,
     // paddingBottom: 24,
   },
   logo: {
@@ -31,6 +31,6 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     padding: 24,
-    marginTop: 24
-  }
-}); 
+    marginTop: 24,
+  },
+});

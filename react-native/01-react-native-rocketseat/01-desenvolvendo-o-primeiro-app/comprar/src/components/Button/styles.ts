@@ -12,6 +12,6 @@ export const styles = StyleSheet.create({
   title: {
     color: "#ffffff",
     fontSize: 14,
-    fontWeight: "600"
+    fontWeight: "600",
   },
 });
