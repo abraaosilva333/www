@@ -9,5 +9,5 @@ export const styles = StyleSheet.create({
   logo: {
     height: 34,
     width: 134,
-  }
+  },
 });
