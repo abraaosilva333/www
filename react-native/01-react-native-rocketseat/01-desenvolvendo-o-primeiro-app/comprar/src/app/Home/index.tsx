@@ -13,7 +13,7 @@ export function Home() {
           style={styles.logo}
           source={require("@/assets/logo.png")}
         ></Image>
-        <Button />
+        <Button title="Adicionar"/>
       </View>
     </SafeAreaView>
   );
