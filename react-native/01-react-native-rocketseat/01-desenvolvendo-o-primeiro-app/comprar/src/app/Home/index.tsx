@@ -1,4 +1,11 @@
-import { Image, View, TouchableOpacity, Text, ScrollView } from "react-native";
+import {
+  Image,
+  View,
+  TouchableOpacity,
+  Text,
+  ScrollView,
+  FlatList,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { styles } from "./styles";
@@ -10,6 +17,7 @@ import { FilterStatus } from "@/types/FilterStatus";
 import { Item } from "@/components/Item";
 
 const FILTER_STATUS: FilterStatus[] = [FilterStatus.PENDING, FilterStatus.DONE];
+const ITEMS = Array.from({ length: 100 }).map((_, index) => index.toString());
 
 export function Home() {
   return (
@@ -34,16 +42,28 @@ export function Home() {
             </TouchableOpacity>
           </View>
 
-          <ScrollView>
-            {Array.from({ length: 100 }).map((_, index) => (
+          {/* <ScrollView>
+            {ITEMS.map((value) => (
               <Item
-                key={index}
+                key={value}
                 data={{ status: FilterStatus.DONE, description: "Café" }}
                 onStatus={() => console.log("mudar status")}
                 onRemove={() => console.log("remover")}
               />
             ))}
-          </ScrollView>
+          </ScrollView> */}
+
+          <FlatList
+            data={ITEMS}
+            keyExtractor={(item) => item}
+            renderItem={({ item }) => (
+              <Item
+                data={{ status: FilterStatus.DONE, description: item }}
+                onStatus={() => console.log("mudar status")}
+                onRemove={() => console.log("remover")}
+              />
+            )}
+          />
         </View>
       </View>
     </SafeAreaView>
