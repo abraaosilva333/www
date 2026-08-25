@@ -1,4 +1,4 @@
-import { Image, View, TouchableOpacity, Text } from "react-native";
+import { Image, View, TouchableOpacity, Text, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { styles } from "./styles";
@@ -34,11 +34,16 @@ export function Home() {
             </TouchableOpacity>
           </View>
 
-          <Item
-            data={{ status: FilterStatus.DONE, description: "Café" }}
-            onStatus={() => console.log("mudar status")}
-            onRemove={() => console.log("remover")}
-          />
+          <ScrollView>
+            {Array.from({ length: 100 }).map((_, index) => (
+              <Item
+                key={index}
+                data={{ status: FilterStatus.DONE, description: "Café" }}
+                onStatus={() => console.log("mudar status")}
+                onRemove={() => console.log("remover")}
+              />
+            ))}
+          </ScrollView>
         </View>
       </View>
     </SafeAreaView>
