@@ -6,8 +6,8 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  text: {
-    fontWeight: "700",
-    fontSize: 33,
-  },
+  logo: {
+    height: 34,
+    width: 134,
+  }
 });
