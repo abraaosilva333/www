@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 24,
     paddingTop: 16,
+    gap: 24
     // paddingBottom: 24,
   },
   logo: {

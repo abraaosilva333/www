@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./styles";
 
 import { Button } from "@/components/Button";
+import { Input } from "@/components/Input";
 
 export function Home() {
   return (
@@ -13,7 +14,8 @@ export function Home() {
           style={styles.logo}
           source={require("@/assets/logo.png")}
         ></Image>
-        <Button title="Adicionar"/>
+        <Input placeholder="O que você precisa comprar?" />
+        <Button title="Adicionar" />
       </View>
     </SafeAreaView>
   );
