@@ -1,4 +1,4 @@
-/* let num1 = 9;
+let num1 = 9;
 
 console.log(Math.ceil(num1)); // arredonda o número para cima.
 
@@ -25,9 +25,9 @@ console.log(Math.sqrt(num1)); // calcula a raiz quadrada de um número. */
 
 // para gerar números aleatórios de 0 até quase 10.
 
-/* console.log(Math.random() * 10); // gera números de ponto flutuante. para obter números inteiros, podemos usar Math.floor().
+console.log(Math.random() * 10); // gera números de ponto flutuante. para obter números inteiros, podemos usar Math.floor().
 
-console.log(Math.floor(Math.random() * 10)); // gera números inteiros aleatórios de 0 a 9. */
+console.log(Math.floor(Math.random() * 10)); // gera números inteiros aleatórios de 0 a 9.
 
 // Math.floor() sempre arredonda para baixo. Por exemplo, 5.9 vira 5.
 // Já Math.round() arredonda para o número inteiro mais próximo. Por exemplo, 5.9 vira 6.
